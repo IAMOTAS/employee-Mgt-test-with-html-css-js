@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <!-- FullCalendar CSS -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+
+    <div class="container">
+        <section id="clockIn">
+            <h2>Clock In</h2>
+            <button id="clockInButton">Clock In</button>
+        </section>
+
+        <section id="googleTrack">
+            <h2>Google Track</h2>
+            <!-- Google track integration -->
+        </section>
+
+        <section id="electronicIdentification">
+            <h2>Electronic Identification</h2>
+            <!-- Electronic identification features -->
+        </section>
+
+        <section id="taskSummary">
+            <h2>Task Summary</h2>
+            <form id="trackTaskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required>
+                <input type="number" id="estimatedTime" placeholder="Estimated Time (hours)" required>
+                <button type="submit">Track Task</button>
+            </form>
+        </section>
+
+        <section id="annualReport">
+            <h2>Annual Work Report</h2>
+            <!-- Annual work report section -->
+        </section>
+
+        <section id="leaveManagement">
+            <h2>Leave Management</h2>
+            <form id="leaveForm">
+                <input type="date" id="startDate" required>
+                <input type="date" id="endDate" required>
+                <button type="submit">Submit Leave</button>
+            </form>
+        </section>
+
+        <section id="onlineResources">
+            <h2>Online Reading Resources</h2>
+            <!-- Online reading resources for employees -->
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <!-- Clock in attendance for employees -->
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <div id='calendarContainer'></div>
+        </section>
+    </div>
+
+    <!-- FullCalendar JavaScript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
